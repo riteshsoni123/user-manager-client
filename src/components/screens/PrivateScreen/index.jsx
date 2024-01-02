@@ -61,15 +61,15 @@ const PrivateScreen = () => {
         setError("You are not authorized please login");
       }
     };
-    const handleSearchLocalStorage = (name, phone, email) => {
-      const filtered = list.filter(
-        (user) =>
-          user.username.toLowerCase().includes(name.toLowerCase()) &&
-          user.email.toLowerCase().includes(email.toLowerCase()) &&
-          user.phone.includes(phone)
-      );
-      setFilteredList(filtered);
-    };
+    // const handleSearchLocalStorage = (name, phone, email) => {
+    //   const filtered = list.filter(
+    //     (user) =>
+    //       user.username.toLowerCase().includes(name.toLowerCase()) &&
+    //       user.email.toLowerCase().includes(email.toLowerCase()) &&
+    //       user.phone.includes(phone)
+    //   );
+    //   setFilteredList(filtered);
+    // };
     fetchPrivateData();
     const savedSearchName = localStorage.getItem("searchName");
     const savedSearchPhone = localStorage.getItem("searchPhone");
